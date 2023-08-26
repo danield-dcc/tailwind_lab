@@ -5,16 +5,20 @@ const config: Config = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/**/*.tsx'
+    './src/**/*.tsx',
   ],
   theme: {
     extend: {
-      maxWidth:{
-        app: '700px'
+      gridTemplateColumns: {
+        app: 'minmax(18rem, 20rem), 1fr',
+        profile: 'max-content 1fr min-content',
       },
-     colors:{
-      diego:'#8257e6'
-     }
+      maxWidth: {
+        app: '700px',
+      },
+      colors: {
+        diego: '#8257e6',
+      },
     },
   },
   plugins: [],
